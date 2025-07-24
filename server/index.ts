@@ -18,7 +18,7 @@ type GenericTransitData = {
 }
 
 const DeskThing = createDeskThing<GenericTransitData, ToClientData>()
-let v: any = 0
+let va: any = 0
 
 const sendImage = (imageUrls: string[]) => {
   const imageUrl: string = imageUrls[Math.floor(Math.random() * imageUrls.length)]
