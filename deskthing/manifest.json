@@ -7,7 +7,7 @@
     ],
     "label": "A Better Image Viewer",
     "version": "1.0.3",
-    "description": "A simple app that displays an image",
+    "description": "A simple app that displays an image.",
     "author": "DannyTheHeretic",
     "platforms": [
         "windows",
