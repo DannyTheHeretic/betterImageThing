@@ -1,8 +1,6 @@
 import { createDeskThing } from '@deskthing/server';
 import { AppSettings, DESKTHING_EVENTS, SETTING_TYPES } from '@deskthing/types';
 import dotenv from 'dotenv';
-import { existsSync } from "node:fs";
-import { mkdir, stat } from "node:fs/promises";
 import { saveImageReferenceFromURL } from './utils';
 
 dotenv.config();
@@ -32,23 +30,6 @@ const sendImage = (imageUrls: string[]) => {
   });
 }
 
-const ensureFileExists = (imageUrl) => {
-  if (!existsSync(imageUrl)) {
-    console.debug('Creating images directory');
-    mkdir(imageUrl, { recursive: true });
-  }
-}
-
-
-async function isPathDirectory(path: string): Promise<boolean> {
-  try {
-    const stats = await stat(path); // Or use fs.stat with a callback
-    return stats.isDirectory();
-  } catch (error) {
-    // Handle cases where the path doesn't exist or is inaccessible
-    return false;
-  }
-}
 
 
 
