@@ -1,0 +1,27 @@
+{
+    "id": "betterimage",
+    "isScreenSaver": true,
+    "isWebApp": true,
+    "requires": [
+        ""
+    ],
+    "label": "A Better Image Viewer",
+    "version": "0.9.1",
+    "description": "A simple app that displays an image",
+    "author": "DannyTheHeretic",
+    "platforms": [
+        "windows",
+        "macos",
+        "linux"
+    ],
+    "homepage": "https://github.com/DannyTheHeretic",
+    "repository": "https://github.com/DannyTheHeretic/betterImageThing",
+    "tags": [
+        false,
+        "screensaver"
+    ],
+    "requiredVersions": {
+        "server": ">=0.11.13",
+        "client": ">=0.11.2"
+    }
+}
