@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: clean
-        run: rm -rf node_modules
-      - name: build
+      - name: Install Deps
         run: npm install
       - name: Build and export
         env:
